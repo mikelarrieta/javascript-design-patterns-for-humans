@@ -35,9 +35,8 @@ const originalSheep = new Sheep("Jolly");
 originalSheep.getName();
 originalSheep.getCategory();
 
-const clonedSheep = Object.create(originalSheep);
-// const prototype = new SheepPrototype(originalSheep);
-// const clonedSheep = prototype.clone();
+const prototype = new SheepPrototype(originalSheep);
+const clonedSheep = prototype.clone();
 clonedSheep.setName("Dolly");
 clonedSheep.getName();
 clonedSheep.getCategory();
